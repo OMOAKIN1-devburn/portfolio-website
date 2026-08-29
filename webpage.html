@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olamide Akinola-Portfolio</title>
+    <meta
+      name="description]"
+      content="Software Developer | Frontend-Focused | Growing Full-Stack Skills"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2? family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 - provides all icons used throughout this page -->
+    <!--
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    /> 
+  -->
+
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Stylesheet - saved locally as webpage.css -->
+    <link rel="stylesheet" href="./webpage.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a class="nav-logo" href="#hero">OA</a>
+
+        <!-- Theme toggle button - webpage.js Feature 2 switches between moon (dark) and sun (light) -->
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Toggle light/dark theme"
+          title="Toggle theme"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero-content fade-in">
+        <!-- Circular placeholder profile picture -->
+        <div class="avatar-ring">
+          <div class="avatar">
+            <svg
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Profile picture"
+            >
+              <circle cx="50" cy="36" r="22" fill="#89b4fa" opacity="0.9" />
+              <ellipse
+                cx="50"
+                cy="88"
+                rx="34"
+                ry="22"
+                fill="#89b4fa"
+                opacity="0.9"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <h1 class="hero-name">Olamide Akinola</h1>
+        <p class="hero-title">
+          Software Developer &nbsp;|&nbsp; Frontend-Focused &nbsp;|&nbsp;
+          Growing Full-Stack Skills
+        </p>
+
+        <!-- Greeting - webpage.js Feature 1 fils this with "Good morning!" etc. based on the hour -->
+        <p id="greeting" class="hero-greeting"></p>
+
+        <div class="hero-badges">
+          <span class="badge">Open to Opportunities</span>
+          <span class="badge outline">Nigeria</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Decorative background blobs -->
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="glass-card fade-in">
+          <p class="about-text">
+            Hello! I'm Olamide Akinola, a Software Developer and Metallurgical &
+            Materials Engineering graduate. I've built several projects using
+            HTML, CSS and JavaScript, and I'm currently expanding into React and
+            Flask to grow into backend and full-stack development. I enjoy
+            combining my engineering background with programming to build
+            practical, real-world solutions - and I'm always looking to learn,
+            improve, and take on new challenges.
+          </p>
+
+          <!-- Quick stats -->
+          <div class="stats-row">
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Year of Coding</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Dedication</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2026</span>
+              <span class="stat-label">Active Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title fade-in">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #3776ab, #ffd43b)"
+            >
+              Py
+            </div>
+            <h3>Python</h3>
+            <p>Core language for scripting, GUI apps, and automation</p>
+            <span class="skill-level level-strong">Intermediate</span>
+          </div>
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #e34f26, #f06529)"
+            >
+              H
+            </div>
+            <h3>HTML</h3>
+            <p>Structuring modern, semantic web pages</p>
+            <span class="skill-level level-strong">Intermediate</span>
+          </div>
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #264de4, #2965f1)"
+            >
+              C
+            </div>
+            <h3>CSS</h3>
+            <p>Styling and responsive layouts for the web</p>
+            <span class="skill-level level-strong">Intermediate</span>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #f7df1e, #d4a017)"
+            >
+              JS
+            </div>
+            <h3>JavaScript</h3>
+            <p>Adding interactivity and dynamic behaviour</p>
+            <span class="skill-level level-learning">Intermediate</span>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #f05032, #e84d31)"
+            >
+              Gt
+            </div>
+            <h3>Git &amp; GitHub</h3>
+            <p>Version control and collaboration on code</p>
+            <span class="skill-level level-learning">Learning</span>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #89b4fa, #cba6f7)"
+            >
+              UI
+            </div>
+            <h3>GUI Development</h3>
+            <p>Building desktop apps with Tkinter</p>
+            <span class="skill-level level-strong">Intermediate</span>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #a6e3a1, #40a02b)"
+            >
+              PS
+            </div>
+            <h3>Problem Solving</h3>
+            <p>Breaking down complex problems into simple steps</p>
+            <span class="skill-level level-strong">Strong</span>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #fab387, #fe640b)"
+            >
+              TW
+            </div>
+            <h3>Teamwork</h3>
+            <p>Collaborating effectively to achieve shared goals</p>
+            <span class="skill-level level-strong">Strong</span>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #cba6f7, #89b4fa)"
+            >
+              CL
+            </div>
+            <h3>Continuous Learning</h3>
+            <p>Always growing, adapting, and improving every day</p>
+            <span class="skill-level level-strong">Core Value</span>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #61dafb, #21a1c4)"
+            >
+              R
+            </div>
+            <h3>React</h3>
+            <p>Building interactive, component-based user interface</p>
+            <span class="skill-level level-learning">Learning</span>
+          </div>
+
+          <div class="skill-card fade-in">
+            <div
+              class="skill-icon"
+              style="background: linear-gradient(135deg, #2c3e50, #4a5a6a)"
+            >
+              Fl
+            </div>
+            <h3>Flask</h3>
+            <p>Building backend logic and APIs with Python</p>
+            <span class="skill-level level -learning">Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION  -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title fade-in">Projects</h2>
+        <!-- PROJECT 1: Quiz App -->
+        <div class="project-card fade-in">
+          <div
+            class="project-header"
+            style="background: linear-gradient(135deg, #3776ab22, #f7df1e22)"
+          >
+            <span class="project-tag" style="color: #f7df1e"
+              >HTML . CSS . JS</span
+            >
+            <div class="project-dots">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Quiz App</h3>
+            <p>
+              An interactive quiz application featuring a 15-second countdown
+              timer per question, questions that shuffle on every restart,
+              instant correct-answer feedback when an incorrect option is
+              selected or the timer runs out, and full score tracking with
+              results display.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span><span>JavaScript</span>
+            </div>
+            <!-- Link to GitHub repo - update href once repo is uploaded -->
+            <a
+              href="https://github.com/OMOAKIN1-devburn/quiz-app"
+              class="project-link"
+              target="_blank"
+              >GitHub / View Project</a
+            >
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Calculator -->
+        <div class="project-card fade-in">
+          <div
+            class="project-header"
+            style="background: linear-gradient(135deg, #f7df1e22, #3776ab22)"
+          >
+            <span class="project-tag" style="color: #f7df1e"
+              >HTML . CSS . JS</span
+            >
+            <div class="project-dots">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Calculator</h3>
+            <p>
+              A modern calculator supporting full arithmetic operations
+              alongside memory functions (MC, MR, M+, M-), a plus/minus sign
+              toggle, percentage calculation, and an all-clear (AC) function,
+              with a clean and responsive interface.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span><span>JavaScript</span>
+            </div>
+            <!-- Link to GitHub repo - update href once repo is uploaded -->
+            <a
+              href="https://github.com/OMOAKIN1-devburn/calculator-project"
+              class="project-link"
+              target="_blank"
+              >GitHub / View Project</a
+            >
+          </div>
+        </div>
+
+        <!-- PROJECT 3: School website -->
+        <div class="project-card fade-in">
+          <div
+            class="project-header"
+            style="background: linear-gradient(135deg, #e34c2622, #f0652922)"
+          >
+            <span class="project-tag" style="color: #e34c26"
+              >HTML .CSS . JS</span
+            >
+            <div class="project-dots">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>School Website</h3>
+            <p>
+              A modern, responsive school website designed to present school
+              information clearly and provide a clean, user-friendly experience
+              across devices.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span><span>JavaScript</span>
+            </div>
+            <!-- Link to GitHub repo - update href once repo is uploaded -->
+            <a
+              href="https://github.com/OMOAKIN1-devburn/school-project-site"
+              class="project-link"
+              target="_blank"
+              >GitHub / View Project</a
+            >
+          </div>
+        </div>
+
+        <!-- PROJECT 4: World Digital Clock -->
+        <div class="project-card fade-in">
+          <div
+            class="project-header"
+            style="background: linear-gradient(135deg, #89b4fa22, #cba6f722)"
+          >
+            <span class="project-tag" style="color: #89b4fa"
+              >HTML . CSS . JS</span
+            >
+            <div class="project-dots">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>World Digital Clock</h3>
+            <p>
+              A multi-country world clock displaying accurate local time for
+              five main countries based on the device's timezone, wit light and
+              dark themes, the ability to search and add additional cities, and
+              Levenshtein distance matching that suggests the correct country
+              name when a misspelling is entered.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span><span>JavaScript</span>
+            </div>
+            <!-- Link to GitHub repo - update href once repo is uploaded -->
+            <a
+              href="https://github.com/OMOAKIN1-devburn/digital-clock"
+              class="project-link"
+              target="_blank"
+              >GitHub / View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-title fade-in">Education</h2>
+        <div class="glass-card edu-card fade-in"></div>
+        <div class="edu-icon">
+          <svg
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M24 4L44 14v21-20 10L4 16v-2L24 4z"
+              fill="#89b4fa"
+              opacity="0.9"
+            />
+            <path
+              d="M8 20v14c0 4.4 7.2 8 16 8s16-3.6 16-8V20L24 30 8 20z"
+              fill="#cba6f7"
+              opacity="0.8"
+            />
+          </svg>
+        </div>
+        <div class="edu-text">
+          <h3>Metallurgical and Materials Engineering</h3>
+          <p class="edu-sub">
+            Metallurgical &amp; Materials Engineering Graduate
+          </p>
+          <p class="edu-desc">
+            Combining engineering fundamentals with hands-on software
+            development experience, applying an analytical, problem-solving
+            mindset from materials science to building modern digital solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOALS SECTION -->
+    <section class="section" id="goals">
+      <div class="container">
+        <h2 class="section-title fade-in">Goals</h2>
+        <div class="goals-grid">
+          <div class="goal-card fade-in">
+            <div class="goal-num">01</div>
+            <p>Grow as a Software Developer</p>
+          </div>
+
+          <div class="goal-card fade-in">
+            <div class="goal-num">02</div>
+            <p>Build more practical, real-world projects</p>
+          </div>
+
+          <div class="goal-card fade-in">
+            <div class="goal-num">03</div>
+            <p>Strengthen backend skills with React and Flask</p>
+          </div>
+
+          <div class="goal-card fade-in">
+            <div class="goal-num">04</div>
+            <p>
+              Gain professional experience through internships and real-world
+              roles
+            </p>
+          </div>
+
+          <div class="goal-card fade-in">
+            <div class="goal-num">05</div>
+            <p>Sharpen problem-solving through continuous practice</p>
+          </div>
+
+          <div class="goal-card fade-in">
+            <div class="goal-num">06</div>
+            <p>Keep expanding my technical skill set</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <p class="contact-sub fade-in">
+          Have a project idea or just want to say hello? I would love to hear
+          from you.
+        </p>
+
+        <div class="contact-buttons fade-in">
+          <a href="mailto:haroldburn03@gmail.com" class="contact-btn email-btn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M2 8l10 6 10-6" />
+            </svg>
+            Email Me
+          </a>
+
+          <a
+            href="https://wa.me/2348166940771"
+            target="blank"
+            rel="noopener"
+            class="contact-btn whatsapp-btn"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472
+          14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94
+          1.164-.173.199-.347.233-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198
+          0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077
+          4.487.709.306 1.262.489
+          1.694.625.712.227 1.36.195
+          1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.07L2 22l5.07-1.36A9.95 9.95 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.66 0-3.21-.49-4.52-1.33l-.32-.2-3.01.81.82-2.95-.21-.34A7.96 7.96 0 014 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            WhatsApp
+          </a>
+
+          <!-- GitHub contact button -->
+          <a
+            href="https://github.com/OMOAKIN1-dev"
+            target="_blank"
+            rel="noopener"
+            class="contact-btn github-btn"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.480-.24-.01-.87-.01-.1.71-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.16.58.67.48A10 10 0 0 0 22 12 C22 6.48 17.52 2 12 2Z"
+              />
+            </svg>
+            GitHub
+          </a>
+
+          <!-- LinkedIn contact button -->
+          <a
+            href="https://www.linkedin.com/in/omoakin1"
+            target="_blank"
+            rel="noopener"
+            class="contact-btn linkedin-btn"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 8h4V23h-4V8Zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.5V23h-4V8Z"
+              />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Mini contact form - webpage.js Features 5, 6, 9 validate and track this -->
+        <div class="mini-form-wrap fade-in">
+          <h3 class="mini-form-title">Or send me a quick message</h3>
+          <form id="contactForm" class="mini-form" novalidate>
+            <div class="mini-form-group">
+              <label for="formName">Your Name</label>
+              <input
+                type="text"
+                id="formName"
+                placeholder="e.g. John Smith"
+                autocomplete="name"
+              />
+              <span class="mini-form-error" id="nameError"></span>
+            </div>
+
+            <div class="mini-form-group">
+              <label for="formEmail">Your Email</label>
+              <input
+                type="email"
+                id="formEmail"
+                placeholder="e.g. john@gmail.com"
+                autocomplete="email"
+              />
+              <span class="mini-form-error" id="emailError"></span>
+            </div>
+
+            <div class="mini-form-group">
+              <!-- The label has TWO parts: the text, and the live character counter span -->
+              <label for="formMsg">
+                Message
+                <span id="charCount" class="char-count">0 / 200</span>
+              </label>
+              <textarea
+                id="formMsg"
+                rows="4"
+                placeholder="Write your message here..."
+                maxlength="200"
+              ></textarea>
+              <span class="mini-form-error" id="msgError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary mini-form-btn">
+              Send Message
+            </button>
+
+            <!-- Success message - hidden by default, shown by webpage.js after valid submit -->
+            <p id="formSuccess" class="form-success-msg" hidden>
+              <i class="fa-solid fa-circle-check"></i>Message noted! Thank you -
+              I will get back to you soon.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>
+        Designed and Built by
+        <span class="footer-name">Olamide Akinola</span> &copy; 2026
+      </p>
+    </footer>
+
+    <!-- Scroll-to-top button - webpage.js Feature 3 shows/hides and handles the click -->
+    <button
+      id="scrollTopBtn"
+      class="scroll-top-btn"
+      aria-label="Back to top"
+      title="Back to top"
+    >
+      ⬆️
+    </button>
+
+    <!-- All Javascript - original features + 9 new features -->
+    <script src="./webpage.js"></script>
+  </body>
+</html>
